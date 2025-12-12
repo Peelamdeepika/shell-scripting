@@ -1,7 +1,7 @@
 #!/bin/bash
-PLACE=Kolkota
+PLACE=$1
 NAME1=$1
-NAME2=$2
+NAME2=Kolkata
 
 echo "$NAME1 : Hi $NAME2"
 echo "$NAME2 : Hi $NAME1"
