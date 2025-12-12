@@ -1,5 +1,5 @@
 #!/bin/bash
-R="\[31m"
+R="\e[31m"
 G="\e{32m"
 Y="\e[33m"
 
@@ -9,7 +9,7 @@ TIMESTAMP=$(date +%y-%m-%d)
 FILE="$FOLDER/$FILENAME-$TIMESTAMP.log"
 
 VALIDATE() {
-   if [ $? -ne 0 ]; then
+   if [ $1 -ne 0 ]; then
      dnf install $PACKAGE 
     else
       echo -e "$PACAKGE installed $Y successfully"
