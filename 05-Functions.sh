@@ -28,7 +28,7 @@ do
   dnf list installed $PACKAGE
   if [ $? -ne 0 ]; then
    dnf install $PACKAGE -y 
-   VALIDATE $1 "in your server"
+   VALIDATE $? "in your server"
   else
   echo -e "$G mysql is already installed in your server"  
   fi 
