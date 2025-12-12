@@ -30,6 +30,6 @@ do
    dnf install $PACKAGE -y 
    VALIDATE $? "in your server"
   else
-  echo -e "$G.. $PACKAGE is already installed in your server"  
+  echo -e "$PACKAGE is already installed  $Y in your server"  
   fi 
 done
