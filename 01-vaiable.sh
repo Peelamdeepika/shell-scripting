@@ -1,6 +1,6 @@
 #!/bin/bash
 PLACE=$1
-NAME1=$1
+NAME1=$2
 NAME2=Deepika
 
 echo "$NAME1 : Hi $NAME2"
