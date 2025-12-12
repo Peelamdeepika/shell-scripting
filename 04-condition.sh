@@ -19,5 +19,5 @@ if [ $? -ne 0 ]; then
    echo "mysql is not  $R installed in your server"
     exit 1
 else
-  echo "mysql is installed in your server $y succssfully"
+  echo "mysql is installed in your server $Y succssfully"
 fi         
