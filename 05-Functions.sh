@@ -23,7 +23,7 @@ if [ $USERID -ne 0 ]; then
   exit 1
 fi 
 
-for PACKAGE in 
+for PACKAGE in $@
 do
   dnf list installed $PACKAGE
   if [ $? -ne 0 ]; then
