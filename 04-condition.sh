@@ -16,8 +16,8 @@ fi
 yum install mysql -y
 
 if [ $? -ne 0 ]; then
-   echo "mysql is not  $R installed in your server"
+   echo -e "mysql is not  $R installed in your server"
     exit 1
 else
-  echo "mysql is installed in your server $G succssfully"
+  echo -e "mysql is installed in your server $Y succssfully"
 fi         
