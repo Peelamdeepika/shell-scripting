@@ -13,6 +13,7 @@ VALIDATE() {
      dnf install $PACKAGE 
     else
       echo -e "$PACAKGE installed $Y successfully"
+    fi 
 }
 
 USERID=$(id -u)
