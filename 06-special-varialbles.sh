@@ -1,9 +1,10 @@
 #!/bin/bash
 echo "$0"
 echo "&&"
-echo "$pwd"
-echo "$user"
-INPUT1=DEEPIKA
-INPUT2=DEEPTHI
+echo "$PWD"
+echo "$USER"
 echo "$@"
-echo "$#"       
+echo "$#" 
+
+#don't follow this there is some error it seems
+#this code not getting proper output
