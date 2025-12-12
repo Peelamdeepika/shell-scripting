@@ -12,7 +12,7 @@ VALIDATE() {
    if [ $1 -ne 0 ]; then
      dnf install $PACKAGE 
     else
-      echo -e "$PACAKGE installed $Y successfully"
+      echo -e "The $PACKAGE installed $Y successfully"
     fi 
 }
 
@@ -30,6 +30,6 @@ do
    dnf install $PACKAGE -y 
    VALIDATE $? "in your server"
   else
-  echo -e "$PACKAGE is already installed  $Y in your server"  
+  echo -e "The $PACKAGE is already installed  $Y in your server"  
   fi 
 done
