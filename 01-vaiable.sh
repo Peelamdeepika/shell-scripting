@@ -2,6 +2,13 @@
 PLACE=$1
 NAME1=$2
 NAME2=$3
+echo "please enter your username ms $NAME1"
+read USERNAME
+echo "Please enter your password ms $NAME1"
+echo -s PASSWORD
+
+exit 1
+ 
 
 echo "$NAME1 : Hi $NAME2"
 echo "$NAME2 : Hi $NAME1"
