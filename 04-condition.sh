@@ -1,20 +1,16 @@
 #!/bin/bash
 USERID=$(id -u)
 
-R="\e[31m
-G="\e[32m
-Y="\e[33m
-
 
 if [ $USERID -ne 0 ]; then
-  echo "Now yo are not root user"
+  echo "Now you are not root user"
   exit 1
 fi 
 
 yum install mysql -y
 
 if [ $? -ne 0 ]; then
-   echo "mysql is not $R installed in your server"
+   echo "mysql is not installed in your server"
     exit 1
 else
   echo "mysql is installed in your server succssfully"
