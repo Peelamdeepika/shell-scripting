@@ -1,9 +1,9 @@
 #!/bin/bash
 USERID=$(id -u)
 
-R="\e31m
+R="\e[31m
 G="\e[32m
-Y="\e33m
+Y="\e[33m
 
 
 if [ $USERID -ne 0 ]; then
@@ -17,6 +17,5 @@ if [ $? -ne 0 ]
    echo "mysql is not $R installed in your server"
     exit 1
 else
-  echo "mysql is installed in your server $Y succssfully"
+  echo "mysql is installed in your server succssfully"
 fi         
-
