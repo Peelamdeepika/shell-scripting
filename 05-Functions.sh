@@ -19,7 +19,7 @@ VALIDATE() {
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
-  echo "you need root access"  
+  echo "you need root access" &>>$FILE
   exit 1
 fi 
 
