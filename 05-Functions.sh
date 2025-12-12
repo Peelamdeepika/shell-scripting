@@ -19,7 +19,7 @@ VALIDATE() {
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
-  echo "you need root access" &>>$FILE
+  echo "you need root access"  
   exit 1
 fi 
 
@@ -30,6 +30,6 @@ do
    dnf install $PACKAGE -y 
    VALIDATE $1 "in your server"
   else
-  echo -e "$G mysql is already installed in your server"  &>>$FILE
+  echo -e "$G mysql is already installed in your server"  
   fi 
 done
