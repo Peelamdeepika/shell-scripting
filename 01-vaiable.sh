@@ -5,7 +5,7 @@ NAME2=$3
 echo "please enter your username ms $NAME1"
 read USERNAME
 echo "Please enter your password ms $NAME1"
-echo -s PASSWORD
+read -s PASSWORD
 
 exit 1
  
