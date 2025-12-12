@@ -30,6 +30,6 @@ do
    dnf install $PACKAGE -y 
    VALIDATE $? "in your server"
   else
-  echo -e "$G mysql is already installed in your server"  
+  echo -e "$G.. $PACKAGE is already installed in your server"  
   fi 
 done
